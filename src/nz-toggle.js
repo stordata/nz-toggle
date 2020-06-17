@@ -40,7 +40,7 @@
                 var pressed,
                     current,
                     change,
-                    movement,
+                    movement = 0,
                     now,
                     styleMap = {
                         horizontal: {
@@ -337,7 +337,7 @@
                         height: vm.height + 'px',
                     };
 
-                    // Auto Border Radius 
+                    // Auto Border Radius
                     if (!has(vm.outerRadius)) {
                         vm.outerRadius = Math.min(vm.width, vm.height) / 2;
                     }

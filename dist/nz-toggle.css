@@ -2,7 +2,6 @@
   display: inline-block;
   padding: 3px;
   margin: 3px;
-  -webkit-border-radius: 20px;
   border-radius: 20px;
   position: relative;
   -webkit-transition: all 0.3s ease;
@@ -27,7 +26,6 @@
 }
 /* Handle */
 .nz-toggle-handle {
-  -webkit-border-radius: 20px;
   border-radius: 20px;
   background-color: #fff;
   position: absolute;
@@ -43,7 +41,6 @@
   color: rgba(255,255,255,0.6);
   font-size: 80%;
   padding: 5px;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -234,11 +231,9 @@
   border-right: 5px solid rgba(0,0,0,0.8);
 }
 .nz-toggle-wrap.square {
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 .nz-toggle-wrap.square .nz-toggle-handle {
-  -webkit-border-radius: 2px;
   border-radius: 2px;
 }
 .nz-toggle-wrap:hover .nz-toggle-tooltip {
