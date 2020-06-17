@@ -13,10 +13,10 @@ gulp.task('watch', watchTask);
 // Build Tasks //
 gulp.task('js', jsTask);
 gulp.task('less', lessTask);
-gulp.task('build', ['js', 'less']);
+gulp.task('build', gulp.series(['js', 'less']));
 
 // Default //
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', gulp.series(['build', 'watch']));
 
 
 
@@ -30,7 +30,7 @@ function serveTask() {
 }
 
 function jsTask() {
-    gulp.src('./src/nz-toggle.js')
+    return gulp.src('./src/nz-toggle.js')
         .pipe(ngAnnotate())
         .pipe(gulp.dest('./dist/'))
         .pipe(uglify())
