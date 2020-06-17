@@ -1,6 +1,6 @@
 {
     "name": "@stordata/nz-toggle",
-    "version": "2.2.2",
+    "version": "2.2.3",
     "description": "__Double and Triple-State Toggle for AngularJS__",
     "main": [
         "dist/nz-toggle.js",
